@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 //       .subscribe(() => {
 //         this.getAllPersons();
 //       })
-    
+
 //     }
 
 //   // Get all persons from API

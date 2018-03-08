@@ -16,13 +16,11 @@
   </div>
   <form class="form">
     <div class="inputs">
-      <p>
         <input class="form-input first-name" type="text" placeholder="First Name">
         <input class="form-input last-name" type="text" placeholder="Last Name">
         <input class="form-input title" type="text" placeholder="Title">
         <input class="form-input city" placeholder="City">
-        <select name="state" id="state" ng-model="data.state">
-          <option>--State--</option>
+        <select name="state" class="state" placehholder="Select State">
           <option>PA</option>
           <option>CA</option>
           <option>PH</option>
@@ -35,8 +33,7 @@
         <br>
         <br>
         <textarea class="textarea-styled" type="text" ng-model="infoAbout" maxlength="500" placeholder="Tell the World a Little About You!"></textarea>
-      </p>
-
+      
       <label>Social Media </label>
       <br>
       <br>
