@@ -21,16 +21,17 @@ margin: 25px;
     margin: 0px 20px;
 }
 .inputs {
+    margin: 15px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
     grid-template-areas: 
     "fname fname fname lname lname lname"
-    ". title title title title ."
-    ". create create create create ."
-    ". confirm confirm confirm confirm ."
-    ". city city city state .";
+    "title title title title title title"
+    "city city state state phone phone"
+    "email email email  website website website"
+    ". addDesc addDesc addDesc addDesc .";
 }
 .first-name {
     grid-area: fname;
@@ -38,14 +39,18 @@ margin: 25px;
 .last-name {
     grid-area: lname;
 }
-.tile {
+.title {
     grid-area: title;
+}
+
+.phone {
+    grid-area: phone;
 }
 .create {
     grid-area: create;
 }
-.confirm {
-    grid-area: confirm;
+.email {
+    grid-area: email;
 }
 .city{
     grid-area: city;
@@ -53,6 +58,34 @@ margin: 25px;
 .state{
     grid-area: state;
 }
+.website{
+    grid-area: website;
+}
+.addDesc{
+    grid-area: addDesc;
+}
 strong{
     color:rgba(255,184,8,0.85);
+}
+.button-section{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+}
+.btn{
+    text-align: right;
+    padding: 5px 5px;
+}
+.form{
+    margin-bottom: 100px;
+
 }
