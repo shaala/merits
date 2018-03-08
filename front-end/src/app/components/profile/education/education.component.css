@@ -17,3 +17,6 @@ p {
 .education-date {
   grid-area: eDate;
 }
+.imgalign {
+  display: flex;
+}

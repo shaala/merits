@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ExperienceComponent } from './components/profile/experience/experience.component';
 
 
 const Routes: Routes = [
@@ -21,7 +22,6 @@ const Routes: Routes = [
     path: 'app-profile',
     component: ProfileComponent
   }
-
 ];
 
 

@@ -12,7 +12,8 @@
   border-radius: 80%;
   align-self: center;
 }
-a:hover {
+a:hover, a:active {
+  font: bold;
   text-decoration-line: underline;
   text-decoration-color: rgba(255, 184, 8, 0.85);
 }
