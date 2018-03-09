@@ -84,8 +84,18 @@ button{
 .btn{
     text-align: right;
     padding: 5px 5px;
+
 }
 .form{
     margin-bottom: 100px;
-
+}
+.title-section{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+.social{
+    margin: 25px;
+    margin-top: 0px;
 }

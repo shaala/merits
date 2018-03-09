@@ -1,4 +1,6 @@
-<div><h1 class="section-header-text">Education</h1></div>
+<div>
+  <h1 class="section-header-text">Education</h1>
+</div>
 <div class="eduSection">
   <label class="date-text education-date">Jan 2016 - Dec 2017</label>
   <div class="econtent">
@@ -18,36 +20,45 @@
   </div>
 </div>
 <div>
-  <p><input type="text" placeholder="Name of Institution"></p>
-  <p><input type="text" placeholder="Field of Study">
-    <select name="degreeSelect" placeholder="Degree">
-      
-      <option>Masters</option>
-      <option>Under Graduate</option>
-      <option>High School</option>
-    </select>
-    <br>
+  <form class="form">
+    <div class="btn">
+      <button>&times;</button>
+    </div>
+    <div class="inputs">
+    <p><input type="text" placeholder="Name of Institution">
+    </p>
     <p>
-      <label>Date of completion</label>
+      <input type="text" placeholder="Field of Study">
+      <select name="degreeSelect" placeholder="Degree">
+
+        <option>Masters</option>
+        <option>Under Graduate</option>
+        <option>High School</option>
+      </select>
       <br>
-      <select name="monthEnd" id="monthEnd" ng-model="data.monthEnd">
-        <option>MM</option>
-        <option>Jan</option>
-        <option>Feb</option>
-        <option>March</option>
-      </select>
-      <select name="yrEnd" id="yrEnd" ng-model="data.yrEnd">
-        <option>YYYY</option>
-        <option>2000</option>
-        <option>2001</option>
-        <option>2002</option>
-      </select>
-    </p>
-    <label>Current :
-      <input type="checkbox" ng-model="current">
-    </label>
-    <br/>
-    <p>
-      <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
-    </p>
+      <p>
+        <label>Date of completion</label>
+        <br>
+        <select name="monthEnd" id="monthEnd" ng-model="data.monthEnd">
+          <option>MM</option>
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>March</option>
+        </select>
+        <select name="yrEnd" id="yrEnd" ng-model="data.yrEnd">
+          <option>YYYY</option>
+          <option>2000</option>
+          <option>2001</option>
+          <option>2002</option>
+        </select>
+      </p>
+      <label>Current :
+        <input type="checkbox" ng-model="current">
+      </label>
+      <br/>
+      <p>
+        <textarea type="text" ng-model="addiInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+      </p>
+    </div>
+    </form>
 </div>
