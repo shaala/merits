@@ -11,5 +11,8 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showExperienceModal() {
+    const popup = document.querySelector('.popup-experience');
+    popup.setAttribute('style', 'display: block');
+    }
 }

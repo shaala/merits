@@ -1,20 +1,90 @@
-/* div {
-    margin:5px;
-} */
-.achSection{
+.header{
+    width: 100%;
+    position: relative;
+    /* border: 1px dashed red; */
+}
+.edit-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform: scale(1.8);
+}
+.eye-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    transform: scale(1.8);
+}
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all .3s;
+  }
+.achSection {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "aDate econtent econtent econtent";
+}
+.inputs {
+    margin: 15px;
     display: grid;
-    grid-gap: 10px; 
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "aDate econtent econtent econtent"
+    grid-template-areas: 
+    "awardReciept . . ."
+    "awardMonth awardYear awardTitle awardTitle"
+    ". . addInfo addInfo";
 }
-p{
-    margin:10px;
-    margin-left: 0px;
+p {
+  margin: 10px;
+  margin-left: 0px;
 }
-.econtent{
-    grid-area:econtent;
+.econtent {
+  grid-area: econtent;
 }
-.ach-date{
-    grid-area:aDate;
+.ach-date {
+  grid-area: aDate;
 }
+.close-modal-btn {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin: 10px;
+}
+.close-btn {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.button-section {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13pt;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  color: #757575;
+  cursor: pointer;
+}
+.awardReciept {
+    grid-area: awardReciept;
+}
+.awardMonth {
+    grid-area: awardMonth;
+    width: 80%;
+}
+.awardYear {
+    grid-area: awardYear;
+    width: 80%;
+}
+.awardTitle {
+    grid-area: awardTitle;
+}
+.addInfo{
+    grid-area: addInfo;
+  }

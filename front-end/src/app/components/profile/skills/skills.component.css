@@ -1,6 +1,12 @@
 /* .visitor-view{
     border: 1px dashed red;
 } */
+.eye-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    transform: scale(1.8);
+}
 .header{
     width: 100%;
     position: relative;

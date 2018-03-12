@@ -4,7 +4,7 @@
       <i class="fas fa-times close-btn"></i>
     </div>
     <div class="inputs">
-      <input class="form-input first-name"type="text" placeholder="Type to Add a New Skill">
+      <input class="form-input first-name" type="text" placeholder="Type to Add a New Skill">
     </div>
     <div class="program-popup-section">
       <h2 class="form-input-label">Programming Skills</h2>
@@ -14,12 +14,12 @@
           <i class="devicon-html5-plain-wordmark colored skill-icon"></i>
           <i class="fas fa-times close-icon"></i>
         </div>
-        
+
         <div class="icon">
           <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
           <i class="fas fa-times close-icon"></i>
         </div>
-        
+
         <div class="icon">
           <i class="devicon-javascript-plain colored skill-icon"></i>
           <i class="fas fa-times close-icon"></i>
@@ -41,68 +41,143 @@
         </div>
       </div>
       <h2 class="form-input-label">Other Skills</h2>
-        <div class="skills-container">
+      <div class="skills-container">
 
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>coding</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Adobe Photoshop</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>kdjflsd</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Being awesome</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Adobe Illustrator</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Adobe After Effects</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Some other skill</p>
-            </div>
-
-            <div class="skill-bubble">
-              <div class="close">
-                <i class="fas fa-times"></i>
-              </div>
-              <p>Some other really useful skill</p>
-            </div>
-
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>coding</p>
         </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Adobe Photoshop</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>kdjflsd</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Being awesome</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Adobe Illustrator</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Adobe After Effects</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Some other skill</p>
+        </div>
+
+        <div class="skill-bubble">
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+          <p>Some other really useful skill</p>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
+<div class="popup-achievment">
+  <div class="popup-modal form">
+    <div class="close-modal-btn" (click)="hideAchieveModal()">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="achievement-inputs">
+      <h4 class="form-input-label awardReciept">Date of reciept</h4>
+      <select name="awardMonth" class="awardMonth">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="awardYear" class="awardYear">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <input type="text" class="form-input awardTitle" placeholder="Awards or Achievements Title">
+      <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+    </div>
+    <div class="button-section">
+      <button>Save!</button>
+    </div>
+  </div>
+</div>
+<!-- End of PopUp Achievement Modal -->
+<!-- Experience Modal begins -->
+<div class="popup-experience">
+  <div class="popup-modal form"> 
+    <div class="close-modal-btn" (click)="hideExpModal()">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+    <div class="inputs">
+      <h4 class="form-input-label expStartLabel">Date of start</h4>
+      <input type="text" class="form-input companyName" placeholder="Company Name">
+      <select name="startMonth" class="startMonth">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="startYear" class="startYear">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <input type="text" class="form-input title" placeholder="Title">
+      <h4 class="form-input-label expEndLabel">Date of completion</h4>
+      <select name="endMonth" class="endMonth">
+        <option>MM</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>March</option>
+      </select>
+      <select name="endYear" class="endYear">
+        <option>YYYY</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+      </select>
+      <div class="current">
+        <input type="checkbox">
+        <label class="form-input-label">Current :</label>
+      </div>
+      <textarea type="text" class="textarea-styled addInfo" maxlength="500" placeholder="Additional info (Optional)"></textarea>
+    </div>
+    <div class="button-section">
+      <button>Save!</button>
+    </div>
+  </div>
+</div>
+<!-- Experience Pop up modal -->
 
 <div class="profile-grid-container">
   <div class="side-nav">
@@ -111,8 +186,8 @@
   <div class="content">
     <app-about></app-about>
     <div id="12">
-    <app-education ></app-education>
-  </div>
+      <app-education></app-education>
+    </div>
     <app-experience id="13"></app-experience>
     <app-projects></app-projects>
     <app-skills></app-skills>

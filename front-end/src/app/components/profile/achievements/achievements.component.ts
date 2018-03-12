@@ -11,5 +11,9 @@ export class AchievementsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  showAchieveModal() {
+    const popup = document.querySelector('.popup-achievment');
+    popup.setAttribute('style', 'display: block');
+    console.log(' achievement pop up works');
+  }
 }

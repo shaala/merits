@@ -12,10 +12,17 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     console.log('The profile page is connected to the routes.');
   }
-  hideModal(){
-    var popup = document.querySelector('.popup-bg');
-    
-    popup.setAttribute("style", "display: none");
+  hideModal() {
+    const popup = document.querySelector('.popup-bg');
+    popup.setAttribute('style', 'display: none');
     console.log('works');
+  }
+  hideAchieveModal() {
+    const popup = document.querySelector('.popup-achievment');
+    popup.setAttribute('style', 'display: none');
+  }
+  hideExpModal() {
+    const popup = document.querySelector('.popup-experience');
+    popup.setAttribute('style', 'display: none');
   }
 }
